@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphism Container */
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 450px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.container:hover {
+    transform: scale(1.02);
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #fff;
+}
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    background: linear-gradient(90deg, #e52e71, #ff8a00);
+    transform: translateY(-2px);
+}
+
+/* Social Icons */
+.icons {
+    text-align: center;
+    margin-top: 1rem;
+}
+.icons i {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+/* Links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+.links a {
+    text-decoration: none;
+    color: #ffdd57;
+}
+.links a:hover {
+    text-decoration: underline;
+}
